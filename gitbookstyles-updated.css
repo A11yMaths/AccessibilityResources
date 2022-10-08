@@ -1,0 +1,42 @@
+/* These CSS changed improve the constrast of the Gitbook accessibility menu (and can be customized) */
+/* Using latest version of rmd>gitbook>html in September 2022
+/* by David Hodge */
+
+/* Technical naming observations about the gitbook styles/classes */
+/* i is an item */
+/* fa is the 'FontAwesome menu' at the top (i.e. the accessibility menu) */
+
+/* This next bit globally changes the font size of the top menu */
+/* The icons are actually Unicode font characters, so their size can be changed via changing the font size */
+
+i.fa {
+    font-size: 18pt;
+}
+
+/* .btn refers to the buttons visible in the accessibility menu at the top */
+/* This changes their colour to a much darker black than default, you can insert your own colour instead of "#333" */
+
+.btn {
+	color: #333!important;
+}
+
+/* This changes the colour the buttons change when hovered over (to red in this example) */
+	
+.btn:hover {
+	color: red!important;
+}
+
+/* .button refers to the sub-menu buttons inside the accessibility menu: in particular the font-change menu */
+/* #444 is a darker grey than default (you can choose any colour here) */
+
+.button {
+	color:#444!important;
+}
+
+/* This is the hover colour again, this time of the sub-menu */
+
+.button:hover {
+	color:red!important;
+}
+
+/* I have used the override !important command throughout as I have found it difficult to control the loading order of the various different in-built CSS files and don't want to edit any official files directly. */
